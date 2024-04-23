@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants in Doha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .container4 .box {
+            background-color: aliceblue; 
+            border-radius: 10px;
+            box-shadow: 0px 4px 2px black;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container4 .box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .container4 .box img {
+            max-width: 100%;
+            width: 270px;
+            height: 140px;
+            border-radius: 10px;
+            object-fit: cover; 
+        }
+        p{
+            text-align: justify;
+        }
+        .box:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            background-color:#0174BE;
+            color: white;
+        }
+        .box .stars {
+            color: orange;
+        }
+
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Restaurants in Doha</h1>
+    <div class="container4">
+    
+        <a href="https://www.tivolihotels.com/en/souq-waqif-doha/restaurants/argan" class="box">
+            <img src="https://i0.wp.com/bestlifeqatar.com/wp-content/uploads/2018/11/20181116_182735.jpg?resize=2000%2C1200&ssl=1" >
+            <h3>Argan Restaurant & Tea Lounge</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(574)</span>
+            </div>
+            <span style="font-size: small;">Moroccan, Middle Eastern, Tea</span>
+            <p>Argan Restaurant & Tea Lounge offers authentic Moroccan and Middle Eastern cuisine in a stylish setting. Enjoy a variety of flavorful dishes and traditional teas in a relaxed atmosphere.</p>
+        </a>
+        <a href="https://www.zengodoha.com/" class="box">
+            <img src="https://images.squarespace-cdn.com/content/v1/5a78b9318fd4d24b92f02558/1669151522567-ZEIPDVPLEZVKLGA2EP6J/Zengo-Doha-Interior-2+%281%29.jpg" >
+            <h3>Zengo</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(632)</span>
+            </div>
+            <span style="font-size: small;">Asian, Latin American, Fusion</span>
+            <p>Zengo offers an innovative fusion of Asian and Latin American cuisines, creating a unique dining experience. Located in the heart of Doha, it's known for its creative cocktails and vibrant atmosphere.</p>
+        </a>
+        <a href="https://www.facebook.com/TANGLuxuryRestaurant/posts/our-tang-menu-is-filled-with-contemporary-dishes-that-bring-the-flavours-of-pan-/270991715146019/" class="box">
+            <img src="https://www.factmagazines.com/wp-content/uploads/2023/08/TANG-Dubai-002-scaled.jpg" >
+            <h3>Tang Pan Asian Restaurant</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(412)</span>
+            </div>
+            <span style="font-size: small;">Asian, Chinese, Japanese</span>
+            <p>Tang Pan Asian Restaurant offers an extensive menu of Asian cuisine, including Chinese and Japanese specialties. Enjoy delicious dishes prepared with fresh ingredients and served in a modern and elegant setting.</p>
+        </a>
+        <a href="https://www.theworlds50best.com/discovery/Establishments/Qatar/Doha/La-Mar-Doha-by-Gast%C3%B3n-Acurio.html" class="box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/94/97/29/la-mar-terrace.jpg" >
+            <h3>La Mar Doha</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span style="color: black;">(859)</span>
+            </div>
+            <span style="font-size: small;">Peruvian, Seafood, Latin American</span>
+            <p>La Mar Doha offers an authentic taste of Peruvian cuisine with a focus on seafood and Latin American flavors. Enjoy fresh ceviche, grilled seafood, and innovative cocktails in a sophisticated waterfront setting.</p>
+        </a>
+        <a href="https://www.opentable.com/r/the-social-doha-west-bay-suites-doha" class="box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/93/b2/26/boho-social-is-a-new.jpg" >
+            <h3>The Social</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(712)</span>
+            </div>
+            <span style="font-size: small;">International, Casual Dining, Bar</span>
+            <p>The Social offers an international menu with a variety of dishes from around the world, served in a casual dining setting. Enjoy flavorful meals, craft cocktails, and live music in a vibrant atmosphere.</p>
+        </a>
+        <a href="https://thebrigade.co.uk/" class="box">
+            <img src="https://assets.isu.pub/document-structure/240406172114-3b938d84c6379a410d3df19f0868fabf/v1/aecf2079f9bbdefdde59b66fffa2da9e.jpeg" >
+            <h3>The Brigade</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(520)</span>
+            </div>
+            <span style="font-size: small;">European, American, Bar</span>
+            <p>The Brigade offers a diverse menu of European and American cuisine, along with a wide selection of drinks and cocktails. Enjoy hearty meals, tasty appetizers, and a relaxed atmosphere at this popular restaurant in Doha.</p>
+        </a>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                    <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

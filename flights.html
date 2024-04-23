@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights</title>
+    <link rel="stylesheet" href="./flights.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="./index.html">Home</a></li>
+            <li class="item"><a href="./destination.html">Explore</a></li>
+            <li class="item"><a href="./profile.html">Trips</a></li>
+            <li class="item"><a href="./booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='./contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='./login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <section class="modes">
+        <a class="trans" href="./flights.html">
+            <img src="./Images/flightcon.gif">
+            <p>Flights</p>
+        </a>
+        <a class="trans" href="./trains.html">
+            <img src="./Images/train.gif">
+            <p>Trains</p>
+        </a>
+        <a class="trans" href="./busses.html">
+            <img src="./Images/bus.gif">
+            <p>Busses</p>
+        </a>
+        <a class="trans" href="https://www.uber.com/global/en/cities/">
+            <img src="./Images/taxi.gif">
+            <p>Cabs</p>
+        </a>
+        <a class="trans" href="./stays.html">
+            <img src="./Images/reception.gif">
+            <p>Stays</p>
+        </a>
+    </section>
+    <section class="where">
+        <div class="bookbox">
+            <div class="fromto">
+                <div class="from">
+                    <label for="from">FROM</label>
+                    <select name="from" id="from">
+                        <option value="">Somewhere</option>
+                        <option value="India">India</option>
+                    </select>
+                </div>
+                <div class="to">
+                    <label for="to">TO</label>
+                    <select name="to" id="to">
+                        <option value="">Anywhere</option>
+                        <option value="Havelock Island">Havelock Island</option>
+                        <option value="Paris">Paris</option>                    
+                        <option value="Queenstown">Queenstown</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Helsinki">Helsinki</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="New York">New York</option>
+                        <option value="Interlaken">Interlaken</option>
+                        <option value="Istanbul">Istanbul</option>
+                        <option value="Cape Town">Cape Town</option>
+                        <option value="Doha">Doha</option>
+                        <option value="Krabi">Krabi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="details">
+                <div class="fdate">
+                    <label for="fdate">DEPARTURE</label>
+                    <input type="date" id="fdate" name="fdate">
+                </div>
+                <div class="tdate">
+                    <label for="tdate">ARRIVAL</label>
+                    <input type="date" id="tdate" name="tdate">
+                </div>
+                <div class="persons">
+                    <label for="persons">TRAVELLERS</label>
+                    <input type="number" id="persons" name="persons" placeholder="1">
+                </div>
+            </div>
+            <div class="search">
+                <input type="button" id="button" name="button" value="SEARCH" onclick="flightFunction()">
+            </div>
+        </div>
+    </section>
+    <section class="result">
+        <div class="results1">
+            <img src="./Images/indigo.png">
+            <div class="flightnn">
+                <h4>IndiGo</h4>
+                <p>1005</p>
+            </div>
+            <div class="fromt">
+                <h4>01:15</h4>
+                <p>Paris</p>
+            </div>
+            <div class="jtime">
+                <h5>02 hr 35 m</h5>
+                <p>Non Stop</p>
+            </div>
+            <div class="tot">
+                <h4>00:00</h4>
+                <p>Paris</p>
+            </div>
+            <div class="price">
+                <h4>100 USD</h4>
+            </div>
+        </div>
+        <div class="results2">
+            <img src="./Images/indigo.png">
+            <div class="flightnn">
+                <h4>IndiGo</h4>
+                <p>1005</p>
+            </div>
+            <div class="fromt">
+                <h4>12:24</h4>
+                <p>Paris</p>
+            </div>
+            <div class="jtime">
+                <h5>02 hr 35 m</h5>
+                <p>Non Stop</p>
+            </div>
+            <div class="tot">
+                <h4>00:00</h4>
+                <p>Paris</p>
+            </div>
+            <div class="price">
+                <h4>100 USD</h4>
+            </div>
+        </div>
+        <div class="results3">
+            <img src="./Images/indigo.png">
+            <div class="flightnn">
+                <h4>IndiGo</h4>
+                <p>1005</p>
+            </div>
+            <div class="fromt">
+                <h4>19:36</h4>
+                <p>Paris</p>
+            </div>
+            <div class="jtime">
+                <h5>02 hr 35 m</h5>
+                <p>Non Stop</p>
+            </div>
+            <div class="tot">
+                <h4>00:00</h4>
+                <p>Paris</p>
+            </div>
+            <div class="price">
+                <h4>100 USD</h4>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="./images/email.gif"></a>
+                    <a href="contactus.html"><img src="./images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="./images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+    <script src="./flights.js"></script>
+</body>
+</html>

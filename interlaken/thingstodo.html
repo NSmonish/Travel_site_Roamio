@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thing To Do</title>
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 10px;  
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .box {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: justify;
+        border-radius: 12px;
+        background-color: aliceblue;
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .box:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        
+    }
+    
+    .box img {
+        width: 100%;
+        height: 230px; 
+        object-fit: cover; 
+        border-radius: 7px;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .container2 {
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .container2 .section {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px; 
+        }
+        .container2 .section img {
+            width: 35%; 
+            margin: 10px; 
+            border-radius: 8px; 
+            box-shadow: 0px 2px 2px black; 
+        }
+        .container2 .section .content {
+            width: 55%; 
+            margin: 10px; 
+        }
+        .container2 .section .content p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .container2 .section .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container2 .section:nth-child(even) .content {
+            order: -1; 
+        }
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Things To Do In Interlaken</h1>
+    <h2>Must-Visit Places</h2>
+    <div class="container">
+        <div class="box">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/81/10.jpg" >
+            <div class="content">
+                <h2>Schynige Platte</h2>
+                <p>Take a scenic journey aboard the Schynige Platte Railway to the summit of Schynige Platte. Enjoy breathtaking views of the Eiger, Mönch, and Jungfrau mountains, explore alpine gardens, and embark on hiking trails amidst stunning landscapes.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="https://media1.thrillophilia.com/filestore/dasya9cavla1voa4f5gtmmckxjlz_1584173349_fi.jpg?w=400&dpr=2" >
+            <div class="content">
+                <h2>Harder Kulm</h2>
+                <p>Ride the funicular to Harder Kulm, Interlaken's local mountain summit. Marvel at panoramic views of Interlaken, Lake Thun, and Lake Brienz from the viewing platform. Enjoy hiking trails, mountain biking, or dining at the restaurant with spectacular vistas.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/09/78/b6.jpg" >
+            <div class="content">
+                <h2>Jungfraujoch</h2>
+                <p>Embark on an unforgettable journey to Jungfraujoch, the "Top of Europe." Travel by cogwheel train to the highest railway station in Europe, situated amidst the Jungfrau-Aletsch UNESCO World Heritage Site. Explore ice caves, walk on the Sphinx Observation Terrace, and admire the stunning Alpine scenery.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://swissfamilyfun.com/wp-content/uploads/2011/03/giessbach-feature-16x10.jpg" >
+            <div class="content">
+                <h2>Giessbach Falls</h2>
+                <p>Discover the majestic Giessbach Falls, a series of waterfalls cascading down a forested mountainside into Lake Brienz. Take a boat ride across the lake or hike through lush forests to reach the falls. Enjoy stunning views and experience the natural beauty of the Swiss Alps.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://cdn.getyourguide.com/img/tour/5cc0de0b380bcc04.jpeg/97.jpg" >
+            <div class="content">
+                <h2>Lauterbrunnen Valley</h2>
+                <p>Explore the picturesque Lauterbrunnen Valley, famous for its stunning waterfalls and dramatic cliffs. Take a leisurely stroll along the valley floor, visit iconic waterfalls like Staubbach Falls and Trümmelbach Falls, or embark on hiking trails leading to alpine meadows and panoramic viewpoints.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://img.ecmaps.de/remote/.jpg?url=http%3A%2F%2Fimg.oastatic.com%2Fimg%2F25818240%2F.jpg&scale=both&mode=crop&quality=90&width=1500&height=1000" >
+            <div class="content">
+                <h2>Saxeten</h2>
+                <p>Discover the charming village of Saxeten, nestled in the mountains above Interlaken. Enjoy panoramic views of the Jungfrau region, go hiking or mountain biking on scenic trails, or simply relax and soak in the peaceful atmosphere of this alpine retreat.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2>Adventures</h2>
+    <div class="container2">
+        <div class="section">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/8f/8b/f2.jpg">
+            <div class="content">
+                <p>Experience the thrill of paragliding over Interlaken's stunning landscapes. Take off from scenic launch sites and soar through the sky with experienced pilots, enjoying breathtaking views of the Swiss Alps and shimmering lakes below.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://cdn.getyourguide.com/img/tour/730dd52898753929.jpeg/145.jpg">
+            <div class="content">
+                <p>Feel the adrenaline rush with a tandem skydiving experience over Interlaken. Jump from a plane at 15,000 feet and freefall at speeds of up to 200 kilometers per hour, enjoying breathtaking views of the Swiss Alps and scenic lakes before landing safely with your expert instructor.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://bus2alps.com/wp-content/uploads/2021/12/b2a_interlaken-winter11.jpg">
+            <div class="content">
+                <p>Explore the pristine waters of Lake Thun and Lake Brienz with a canoeing or kayaking adventure. Paddle along tranquil shores, admire the surrounding mountain scenery, and discover hidden bays and beaches along the lakeshores.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <img src="https://www.balmers.com/wp-content/uploads/2015/08/climbing-interlaken.jpg">
+            <div class="content">
+                <p>Challenge yourself with rock climbing and via ferrata adventures in the Swiss Alps. Climb vertical cliffs, traverse thrilling via ferrata routes, and enjoy stunning views of Interlaken and the surrounding mountains from high above.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                    <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

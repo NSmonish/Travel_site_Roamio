@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 1vw 2vw;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 7vw;
+            padding: 2vw;
+        }
+
+        .container4 .box {
+            background-color:aliceblue; 
+            border-radius: 10px;
+            box-shadow: 0px 4px 2px black;
+            padding: 2vw;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container4 .box h3 {
+            font-size: 1.8vw;
+            margin-bottom: 1vw;
+            font-weight: bold;
+            
+        }
+
+        .container4 .box img {
+            max-width: 100%;
+            width: 20vw;
+            height: 15vw;
+            border-radius: 10px;
+            object-fit: cover; 
+           
+        }
+        p{
+            font-size: 1.2vw;
+            text-align: justify;
+        }
+        .box:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        background-color:#0174BE;
+        color: white;
+       
+        }
+        .box .stars {
+            color: orange;
+        
+        }
+        span {
+            font-size: 0.9vw;
+        }
+        h1 {
+            font-size: 4vw;
+        }
+        .ai {
+            width: 2vw !important;
+            height: 2vw !important;
+            border-radius: 0 !important;
+            padding: 1vw;
+        }
+        .amenities {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .amenities>div {
+            display: flex;
+            align-items: center;
+        }
+
+        body {
+            background-color: #E1F7F5;
+        }
+        
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: #EEEEEE;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        .modes {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-top: 2px solid #111;
+            border-bottom: 2px solid #111;
+            margin: 10px 0px;
+        }
+        
+        .modes img {
+            width: 10vw;
+        }
+        
+        .trans {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2vw;
+            font-weight: 800;
+            color: #111;
+            text-decoration: none;
+        }
+        
+        .trans:hover {
+            background-color: aliceblue;
+        }
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="./index.html">Home</a></li>
+            <li class="item"><a href="./destination.html">Explore</a></li>
+            <li class="item"><a href="./profile.html">Trips</a></li>
+            <li class="item"><a href="./booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='./contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='./login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <section class="modes">
+        <a class="trans" href="./flights.html">
+            <img src="./Images/flightcon.gif">
+            <p>Flights</p>
+        </a>
+        <a class="trans" href="./trains.html">
+            <img src="./Images/train.gif">
+            <p>Trains</p>
+        </a>
+        <a class="trans" href="./busses.html">
+            <img src="./Images/bus.gif">
+            <p>Busses</p>
+        </a>
+        <a class="trans" href="https://www.uber.com/global/en/cities/">
+            <img src="./Images/taxi.gif">
+            <p>Cabs</p>
+        </a>
+        <a class="trans" href="./stays.html">
+            <img src="./Images/reception.gif">
+            <p>Stays</p>
+        </a>
+    </section>
+    <h1 style="text-align: center;">Luxurious Stays</h1>
+    <div class="container4">
+        <a href="https://www.cghearth.com/tilar-siro-havelock-island-andamans/" class="box">
+            <h2>Havelock Island</h2>
+            <img src="./Images/tilar_siro.jpeg" class="image">
+            <h3>Tilar Siro Andamans, CGH Earth</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <div class="amenities">
+                <div class="one">
+                    <img src="./Images/dollar.png" class="ai">
+                    <p>400 USD</p>
+                </div>
+                <div class="two">
+                    <img src="./Images/double-bed.png" class="ai">
+                    <p>Deluxe Room</p>
+                </div>
+                <div class="three">
+                    <img src="./Images/restaurant.png" class="ai">
+                    <p>Complementary Breakfast</p>
+                </div>
+                <div class="four">
+                    <img src="./Images/swimming-pool.png" class="ai">
+                    <p>Pool Access</p>
+                </div>
+                <div class="five">
+                    <img src="./Images/wi-fi.png" class="ai">
+                    <p>Free Wi-Fi</p>
+                </div>
+            </div>
+            
+        </a>
+        <a href="https://www.grandhoteldupalaisroyal.com/" class="box">
+            <h2>Paris</h2>
+            <img src="./Images/du_palais.jpeg" class="image">
+            <h3>Grand Hotel Du Palais Royal</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <div class="amenities">
+                <div class="one">
+                    <img src="./Images/dollar.png" class="ai">
+                    <p>720 USD</p>
+                </div>
+                <div class="two">
+                    <img src="./Images/double-bed.png" class="ai">
+                    <p>Private Suite</p>
+                </div>
+                <div class="three">
+                    <img src="./Images/restaurant.png" class="ai">
+                    <p>Complementary Meals</p>
+                </div>
+                <div class="four">
+                    <img src="./Images/swimming-pool.png" class="ai">
+                    <p>Private Access</p>
+                </div>
+                <div class="five">
+                    <img src="./Images/wi-fi.png" class="ai">
+                    <p>Free WI-Fi</p>
+                </div>
+            </div>
+            
+        </a>
+        <a href="https://eichardts.com/" class="box">
+            <h2>Queenstown</h2>
+            <img src="./Images/eichardt.jpeg" class="image">
+            <h3>Eichardt's Private Hotel</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <div class="amenities">
+                <div class="one">
+                    <img src="./Images/dollar.png" class="ai">
+                    <p>1150 USD</p>
+                </div>
+                <div class="two">
+                    <img src="./Images/double-bed.png" class="ai">
+                    <p>Deluxe Room</p>
+                </div>
+                <div class="three">
+                    <img src="./Images/restaurant.png" class="ai">
+                    <p>Complementary Breakfast</p>
+                </div>
+                <div class="four">
+                    <img src="./Images/swimming-pool.png" class="ai">
+                    <p>Pool Access</p>
+                </div>
+                <div class="five">
+                    <img src="./Images/wi-fi.png" class="ai">
+                    <p>Free WI-Fi</p>
+                </div>
+            </div>
+            
+        </a>
+        <a href="https://www.instagram.com/bonovacafe/" class="box">
+            <h2>Rio de Janeiro</h2>
+            <img src="./Images/ibi_rio.jpeg" class="image">
+            <h3>Ibis Rio de Janeiro Parque Olímpico</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <div class="amenities">
+                <div class="one">
+                    <img src="./Images/dollar.png" class="ai">
+                    <p>150 USD</p>
+                </div>
+                <div class="two">
+                    <img src="./Images/double-bed.png" class="ai">
+                    <p>Deluxe Room</p>
+                </div>
+                <div class="five">
+                    <img src="./Images/wi-fi.png" class="ai">
+                    <p>Free WI-Fi</p>
+                </div>
+            </div>
+            
+        </a>
+        <a href="https://www.hotelkamp.com/" class="box">
+            <h2>Helsinki</h2>
+            <img src="./Images/kamp.jpeg" class="image">
+            <h3>Hotel Kamp</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <div class="amenities">
+                <div class="one">
+                    <img src="./Images/dollar.png" class="ai">
+                    <p>615 USD</p>
+                </div>
+                <div class="two">
+                    <img src="./Images/double-bed.png" class="ai">
+                    <p>Deluxe Room</p>
+                </div>
+                <div class="three">
+                    <img src="./Images/restaurant.png" class="ai">
+                    <p>Complementary Breakfast</p>
+                </div>
+                <div class="five">
+                    <img src="./Images/wi-fi.png" class="ai">
+                    <p>Free WI-Fi</p>
+                </div>
+            </div>
+            
+        </a>
+        <a href="https://www.ihg.com/hotels/" class="box">
+            <h2>Tokyo</h2>
+            <img src="./Images/kimpton.jpeg" class="image">
+            <h3>Kimpton Shinjuku Tokyo</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <div class="amenities">
+                <div class="one">
+                    <img src="./Images/dollar.png" class="ai">
+                    <p>500 USD</p>
+                </div>
+                <div class="two">
+                    <img src="./Images/double-bed.png" class="ai">
+                    <p>Premium Room</p>
+                </div>
+                <div class="three">
+                    <img src="./Images/restaurant.png" class="ai">
+                    <p>Complementary Breakfast</p>
+                </div>
+                <div class="four">
+                    <img src="./Images/swimming-pool.png" class="ai">
+                    <p>Pool Access</p>
+                </div>
+                <div class="five">
+                    <img src="./Images/wi-fi.png" class="ai">
+                    <p>Free WI-Fi</p>
+                </div>
+            </div>
+            
+        </a>
+        <a href="https://www.theplazany.com/" class="box">
+            <h2>New York City</h2>
+            <img src="./Images/plaza.jpeg" class="image">
+            <h3>The Plaza New York - A Fairmont Managed Hotel</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <div class="amenities">
+                <div class="one">
+                    <img src="./Images/dollar.png" class="ai">
+                    <p>2200 USD</p>
+                </div>
+                <div class="two">
+                    <img src="./Images/double-bed.png" class="ai">
+                    <p>Deluxe Suite</p>
+                </div>
+                <div class="three">
+                    <img src="./Images/restaurant.png" class="ai">
+                    <p>Complementary Food</p>
+                </div>
+                <div class="four">
+                    <img src="./Images/swimming-pool.png" class="ai">
+                    <p>Pool/Bar Access</p>
+                </div>
+                <div class="five">
+                    <img src="./Images/wi-fi.png" class="ai">
+                    <p>Free WI-Fi</p>
+                </div>
+            </div>
+            
+        </a>
+        <a href="https://www.victoria-jungfrau.ch/" class="box">
+            <h2>Interlaken</h2>
+            <img src="./Images/victoria.jpeg" class="image">
+            <h3>Victoria-Jungfrau Grand Hotel & Spa</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <div class="amenities">
+                <div class="one">
+                    <img src="./Images/dollar.png" class="ai">
+                    <p>1400 USD</p>
+                </div>
+                <div class="two">
+                    <img src="./Images/double-bed.png" class="ai">
+                    <p>Luxury Room</p>
+                </div>
+                <div class="three">
+                    <img src="./Images/restaurant.png" class="ai">
+                    <p>Complementary Breakfast</p>
+                </div>
+                <div class="four">
+                    <img src="./Images/swimming-pool.png" class="ai">
+                    <p>Pool Access</p>
+                </div>
+                <div class="five">
+                    <img src="./Images/wi-fi.png" class="ai">
+                    <p>Free WI-Fi</p>
+                </div>
+            </div>
+            
+        </a>
+        <a href="https://www.hilton.com/en/book/" class="box">
+            <h2>Istanbul</h2>
+            <img src="./Images/hilton.jpeg" class="image">
+            <h3>Hilton Istanbul Bomonti Hotel & Conference Center</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <div class="amenities">
+                <div class="one">
+                    <img src="./Images/dollar.png" class="ai">
+                    <p>370 USD</p>
+                </div>
+                <div class="two">
+                    <img src="./Images/double-bed.png" class="ai">
+                    <p>Deluxe Room</p>
+                </div>
+                <div class="three">
+                    <img src="./Images/restaurant.png" class="ai">
+                    <p>Complementary Meals</p>
+                </div>
+                <div class="four">
+                    <img src="./Images/swimming-pool.png" class="ai">
+                    <p>Pool Access</p>
+                </div>
+                <div class="five">
+                    <img src="./Images/wi-fi.png" class="ai">
+                    <p>Free WI-Fi</p>
+                </div>
+            </div>
+            
+        </a>
+        
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="./images/email.gif"></a>
+                    <a href="contactus.html"><img src="./images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="./images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

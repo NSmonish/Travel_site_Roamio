@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queenstown</title>
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .container .content {
+            flex: 1;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .container img {
+            width: 45%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 2px 2px black;
+        }
+
+        .container p {
+            font-size: 18px;
+            line-height: 1.5;
+            padding-left: 20px;
+            text-align: justify;
+        }
+
+        .container2 {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .container2 .content {
+            flex: 1;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .container2 img {
+            width: 45%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 2px 2px black;
+        }
+
+        .container2 p {
+            font-size: 18px;
+            line-height: 1.5;
+            padding-right: 20px;
+            text-align: justify;
+        }
+
+        .container3 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 15px auto;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 0px 2px 2px black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container3 h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .container4.box {
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container4.box h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .box img {
+            max-width: 100%;
+            width: 270px;
+            height: 140px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="./index.html">Home</a></li>
+            <li class="item"><a href="./destination.html">Explore</a></li>
+            <li class="item"><a href="./profile.html">Trips</a></li>
+            <li class="item"><a href="./booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='./contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='./login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="./queenstown/thingstodo.html">Things To Do</a>
+        <a href="./stays.html">Stay</a>
+        <a href="./booking.html">Flights and Transit</a>
+        <a href="./queenstown/restaurants.html">Restaurants</a>
+        <a href="./queenstown/packages.html">Packages</a>
+        <a href="./queenstown/reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="padding: 20px; text-align: center;">Welcome To Queenstown!</h1>
+    <div class="container">
+        <img src="https://seethesouthisland.com/wp-content/uploads/2021/04/viewpoint-queenstown-drive-glenorchy-nz.jpg.webp" class="img">
+        <div class="content">
+            <p>Queenstown, nestled on the shores of Lake Wakatipu, is a picturesque resort town in New Zealand's South Island. Surrounded by majestic mountains and crystal-clear lakes, Queenstown is renowned for its stunning natural beauty and adventurous spirit. With activities ranging from bungee jumping and skiing to wine tasting and scenic cruises, Queenstown offers something for everyone.</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="content">
+            <p>Experience the thrill of Queenstown with its adrenaline-pumping activities, breathtaking landscapes, and vibrant culture. Explore the Remarkables mountain range, take a scenic drive to Milford Sound, or indulge in some of the region's finest wines. Whether you're an adventure seeker or a nature lover, Queenstown promises an unforgettable escape.</p>
+        </div>
+        <img src="https://seethesouthisland.com/wp-content/uploads/2021/04/devils-staircase-drive-queenstown-te-anau-nz.jpg.webp" class="img">
+    </div>
+    <div class="container3">
+        <div class="box">
+            <h3>Best Time To Visit</h3>
+            <p>September to November (Spring) and March to May (Autumn).</p>
+            <p>Mild weather, fewer crowds.</p>
+        </div>
+
+        <div class="box">
+            <h3>Peak Tourist Season</h3>
+            <p>December to February (Summer).</p>
+            <p>Warm weather, busiest time.</p>
+        </div>
+
+        <div class="box">
+            <h3>Quieter Months</h3>
+            <p>June to August (Winter).</p>
+            <p>Cold weather, great for skiing.</p>
+        </div>
+
+        <div class="box">
+            <h3>Avoid</h3>
+            <p>July and August.</p>
+            <p>School holidays, peak of ski season.</p>
+        </div>
+    </div>
+    <h2 style="text-align: center;">Festivals and Events</h2>
+    <div class="container4">
+        <div class="box">
+            <h4>Queenstown Winter Festival, June</h4>
+            <img src="https://media.rnztools.nz/rnz/image/upload/s--bMMQOcFa--/c_scale,f_auto,q_auto,w_1050/v1643275500/4PW8DPS_copyright_image_18589">
+        </div>
+
+        <div class="box">
+            <h4>Warbirds Over Wanaka, April</h4>
+            <img src="https://www.leisuretimetours.co.nz/wp-content/uploads/2023/06/Black-Falcons-over-Lake-at-Warbirds-over-Wanaka.jpg">
+        </div>
+
+        <div class="box">
+            <h4>Arrowtown Autumn Festival, April</h4>
+            <img src="https://media.leisurecom.com/events/image-2015-11-25-13-15-27.jpg">
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="./Images/email.gif"></a>
+                    <a href="contactus.html"><img src="./Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="./Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

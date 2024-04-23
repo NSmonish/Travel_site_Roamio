@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    background-color: #CBF1F5;
+}
+
+.heading {
+    background-image: url(./Images/travel.webp);
+    height: 70vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.headtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    margin-left: 22.5vw;
+    padding-top: 18vw;
+}
+
+.headtext h1 {
+    font-size: 4vw;
+    margin: 0;
+    text-shadow: 2px 2px 2px white;
+}
+
+.headtext p {
+    font-size: 2vw;
+    text-align: justify;
+}
+
+.transport {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+}
+
+.transport h2 {
+    font-size: 4vw;
+    text-decoration: underline;
+}
+
+.transport > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    background-color: #146C94;
+    height: 20vw;
+    color: white;
+    border-radius: 10px;
+}
+
+.transport img {
+    width: 40vw;
+    height: 20vw;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.transport .text {
+    padding: 3.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.transport .text h3 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.transport .text p {
+    font-size: 1.2vw;
+}
+
+.transport .text button {
+    width: 10vw;
+    height: 3vw;
+    border-radius: 5px;
+    background-color: #CBF1F5;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.transport .headquote {
+    background-color: #CBF1F5;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+}
+
+.headquote p {
+    font-size: 2vw;
+    margin: 0;
+}
+
+button:active {
+    background-color: #111;
+}
+
+.travel {
+    margin-top: 8vw;
+    margin-left: 8.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.travel h2 {
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+.travel h3 {
+    margin: 0;
+}
+
+footer {
+    background: #222831;
+    color: #EEEEEE;
+    padding: 2vw 3vw;
+    margin-top: 3vw;
+}
+
+#footer {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100%;
+    margin: 1vw;
+}
+
+.box1 ul li {
+    list-style: none;
+    margin-bottom: 0.7vw;
+}
+
+.box1 ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.1vw;
+}
+
+.box1 ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer .box2 {
+    margin: 0% 4vw;
+}
+
+u {
+    font-size: 1.4vw;
+}
+
+#para {
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1vw 0px;
+}
+
+.icons img {
+    width: 4vw;
+}
+
+.center {
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00ADB5;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 6vw;
+}
+
+#logo {
+    margin: 1vw 1.3vw;
+}
+
+#logo img {
+    height: 7vw;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    margin: 1vw;
+    padding: 0.2vw 1.5vw;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #222831;
+    background-color: #EEEEEE;
+}
+
+#btn1 {
+    display: flex;
+}
+
+.btn {
+    font-size: 1.6vw;
+    padding: 0.2vw 1.5vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+#logo img {
+    margin-top: 4.2vw;
+    height: 8vw;
+}
+

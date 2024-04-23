@@ -1,0 +1,332 @@
+function flightFunction() {
+    var fromn = document.querySelector(".bookbox #from").value;
+    var ton = document.querySelector(".bookbox #to").value;
+    var travn = document.querySelector(".bookbox #persons").value;
+
+    var disp = document.querySelector(".result");
+
+    var f1img = document.querySelector(".results1 img");
+    var f2img = document.querySelector(".results2 img");
+    var f3img = document.querySelector(".results3 img");
+    var fname1 = document.querySelector(".results1 .flightnn h4");
+    var fname2 = document.querySelector(".results2 .flightnn h4");
+    var fname3 = document.querySelector(".results3 .flightnn h4");
+    var fno1 = document.querySelector(".results1 .flightnn p");
+    var fno2 = document.querySelector(".results2 .flightnn p");
+    var fno3 = document.querySelector(".results3 .flightnn p");
+    var fd1 = document.querySelector(".results1 .fromt p");
+    var fd2 = document.querySelector(".results2 .fromt p");
+    var fd3 = document.querySelector(".results3 .fromt p");
+    var tt1 = document.querySelector(".results1 .tot h4");
+    var tt2 = document.querySelector(".results2 .tot h4");
+    var tt3 = document.querySelector(".results3 .tot h4");
+    var td1 = document.querySelector(".results1 .tot p");
+    var td2 = document.querySelector(".results2 .tot p");
+    var td3 = document.querySelector(".results3 .tot p");
+    var jt1 = document.querySelector(".results1 .jtime h5");
+    var jt2 = document.querySelector(".results2 .jtime h5");
+    var jt3 = document.querySelector(".results3 .jtime h5");
+    var price1 = document.querySelector(".results1 .price h4");
+    var price2 = document.querySelector(".results2 .price h4");
+    var price3 = document.querySelector(".results3 .price h4");
+
+    var farr = ["Indigo", "Air France", "Ethiad", "Qatar Airways", "Singapore Airlines"];
+    var fimgarr = ["./Images/indigo.png", "./Images/air_france.png", "./Images/ethiad.jpeg", "./Images/qatar.png", "./Images/singapore_airways.jpeg"];
+
+    fd1.textContent = fromn;
+    fd2.textContent = fromn;
+    fd3.textContent = fromn;
+
+    td1.textContent = ton;
+    td2.textContent = ton;
+    td3.textContent = ton;
+
+    if (ton == "Havelock Island") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "03 h 25 m";
+        jt2.textContent = "03 h 25 m";
+        jt3.textContent = "03 h 25 m";
+        tt1.textContent = ((1+3)%12) + ":" + ((15+25)%60);
+        tt2.textContent = ((12+3)%12) + ":" + ((24+25)%60);
+        tt3.textContent = ((19+3)%12) + ":" + ((36+25)%60);
+        price1.textContent = 1500*travn + " USD";
+        price2.textContent = 1500*travn + " USD";
+        price3.textContent = 1500*travn + " USD";
+    }
+    if (ton == "Paris") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "09 h 10 m";
+        jt2.textContent = "09 h 10 m";
+        jt3.textContent = "09 h 10 m";
+        tt1.textContent = ((1+9)%12) + ":" + ((15+10)%60);
+        tt2.textContent = ((12+9)%12) + ":" + ((24+10)%60);
+        tt3.textContent = ((19+9)%12) + ":" + ((36+10)%60);
+        price1.textContent = 2500*travn + " USD";
+        price2.textContent = 2500*travn + " USD";
+        price3.textContent = 2500*travn + " USD";
+    }
+    if (ton == "Queenstown") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "20 h 12 m";
+        jt2.textContent = "20 h 12 m";
+        jt3.textContent = "20 h 12 m";
+        tt1.textContent = ((1+20)%12) + ":" + ((15+12)%60);
+        tt2.textContent = ((12+20)%12) + ":" + ((24+12)%60);
+        tt3.textContent = ((19+20)%12) + ":" + ((36+12)%60);
+        price1.textContent = 2000*travn + " USD";
+        price2.textContent = 2000*travn + " USD";
+        price3.textContent = 2000*travn + " USD";
+    }
+    if (ton == "Rio de Janeiro") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "18 h 47 m";
+        jt2.textContent = "18 h 47 m";
+        jt3.textContent = "18 h 47 m";
+        tt1.textContent = ((1+18)%12) + ":" + ((15+47)%60);
+        tt2.textContent = ((12+18)%12) + ":" + ((24+47)%60);
+        tt3.textContent = ((19+18)%12) + ":" + ((36+47)%60);
+        price1.textContent = 3000*travn + " USD";
+        price2.textContent = 3000*travn + " USD";
+        price3.textContent = 3000*travn + " USD";
+    }
+    if (ton == "Helsinki") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "09 h 22 m";
+        jt2.textContent = "09 h 22 m";
+        jt3.textContent = "09 h 22 m";
+        tt1.textContent = ((1+9)%12) + ":" + ((15+22)%60);
+        tt2.textContent = ((12+9)%12) + ":" + ((24+22)%60);
+        tt3.textContent = ((19+9)%12) + ":" + ((36+22)%60);
+        price1.textContent = 1800*travn + " USD";
+        price2.textContent = 1800*travn + " USD";
+        price3.textContent = 1800*travn + " USD";
+    }
+    if (ton == "Tokyo") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "08 h 25 m";
+        jt2.textContent = "08 h 25 m";
+        jt3.textContent = "08 h 25 m";
+        tt1.textContent = ((1+8)%12) + ":" + ((15+25)%60);
+        tt2.textContent = ((12+8)%12) + ":" + ((24+25)%60);
+        tt3.textContent = ((19+8)%12) + ":" + ((36+25)%60);
+        price1.textContent = 3500*travn + " USD";
+        price2.textContent = 3500*travn + " USD";
+        price3.textContent = 3500*travn + " USD";
+    }
+    if (ton == "New York") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "14 h 40 m";
+        jt2.textContent = "14 h 40 m";
+        jt3.textContent = "14 h 40 m";
+        tt1.textContent = ((1+14)%12) + ":" + ((15+40)%60);
+        tt2.textContent = ((12+14)%12) + ":" + ((24+40)%60);
+        tt3.textContent = ((19+14)%12) + ":" + ((36+40)%60);
+        price1.textContent = 2800*travn + " USD";
+        price2.textContent = 2800*travn + " USD";
+        price3.textContent = 2800*travn + " USD";
+    }
+    if (ton == "Interlaken") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "08 h 40 m";
+        jt2.textContent = "08 h 40 m";
+        jt3.textContent = "08 h 40 m";
+        tt1.textContent = ((1+8)%12) + ":" + ((15+40)%60);
+        tt2.textContent = ((12+8)%12) + ":" + ((24+40)%60);
+        tt3.textContent = ((19+8)%12) + ":" + ((36+40)%60);
+        price1.textContent = 2200*travn + " USD";
+        price2.textContent = 2200*travn + " USD";
+        price3.textContent = 2200*travn + " USD";
+    }
+    if (ton == "Istanbul") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "07 h 10 m";
+        jt2.textContent = "07 h 10 m";
+        jt3.textContent = "07 h 10 m";
+        tt1.textContent = ((1+7)%12) + ":" + ((15+10)%60);
+        tt2.textContent = ((12+7)%12) + ":" + ((24+10)%60);
+        tt3.textContent = ((19+7)%12) + ":" + ((36+10)%60);
+        price1.textContent = 2600*travn + " USD";
+        price2.textContent = 2600*travn + " USD";
+        price3.textContent = 2600*travn + " USD";
+    }
+    if (ton == "Cape Town") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "13 h 02 m";
+        jt2.textContent = "13 h 02 m";
+        jt3.textContent = "13 h 02 m";
+        tt1.textContent = ((1+13)%12) + ":" + ((15+2)%60);
+        tt2.textContent = ((12+13)%12) + ":" + ((24+2)%60);
+        tt3.textContent = ((19+13)%12) + ":" + ((36+2)%60);
+        price1.textContent = 3200*travn + " USD";
+        price2.textContent = 3200*travn + " USD";
+        price3.textContent = 3200*travn + " USD";
+    }
+    if (ton == "Doha") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "04 h";
+        jt2.textContent = "04 h";
+        jt3.textContent = "04 h";
+        tt1.textContent = ((1+4)%12) + ":" + ((15)%60);
+        tt2.textContent = ((12+4)%12) + ":" + ((24)%60);
+        tt3.textContent = ((19+4)%12) + ":" + ((36)%60);
+        price1.textContent = 2700*travn + " USD";
+        price2.textContent = 2700*travn + " USD";
+        price3.textContent = 2700*travn + " USD";
+    }
+    if (ton == "Krabi") {
+        disp.style.display = "block";
+        var ranf1 = Math.floor(Math.random()*4);
+        var ranf2 = Math.floor(Math.random()*4);
+        var ranf3 = Math.floor(Math.random()*4);
+        f1img.src = fimgarr[ranf1]; 
+        f2img.src = fimgarr[ranf2];
+        f3img.src = fimgarr[ranf3];
+        fname1.textContent = farr[ranf1];
+        fname2.textContent = farr[ranf2];
+        fname3.textContent = farr[ranf3];
+        fno1.textContent = (ranf1+1)*1234;
+        fno2.textContent = (ranf2+1)*1023;
+        fno3.textContent = (ranf3+1)*1185;
+        jt1.textContent = "04 h 35m";
+        jt2.textContent = "04 h 35m";
+        jt3.textContent = "04 h 35m";
+        tt1.textContent = ((1+4)%12) + ":" + ((15+35)%60);
+        tt2.textContent = ((12+4)%12) + ":" + ((24+35)%60);
+        tt3.textContent = ((19+4)%12) + ":" + ((36+35)%60);
+        price1.textContent = 1700*travn + " USD";
+        price2.textContent = 1700*travn + " USD";
+        price3.textContent = 1700*travn + " USD";
+    }
+}

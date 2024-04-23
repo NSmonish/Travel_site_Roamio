@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thing To Do</title>
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 10px;  
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .box {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: justify;
+        border-radius: 12px;
+        background-color: aliceblue;
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .box:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        
+    }
+    
+    .box img {
+        width: 100%;
+        height: 230px; 
+        object-fit: cover; 
+        border-radius: 7px;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .container2 {
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .container2 .section {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px; 
+        }
+        .container2 .section img {
+            width: 35%; 
+            margin: 10px; 
+            border-radius: 8px; 
+            box-shadow: 0px 2px 2px black; 
+        }
+        .container2 .section .content {
+            width: 55%; 
+            margin: 10px; 
+        }
+        .container2 .section .content p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .container2 .section .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container2 .section:nth-child(even) .content {
+            order: -1; 
+        }
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Things To Do In Cape Town</h1>
+    <h2>Must-Visit Places</h2>
+    <div class="container">
+        <div class="box">
+            <img src="https://capetown.citypass.co.za/wp-content/uploads/2022/05/Everything-You-Need-to-Know-about-Table-Mountain-1.jpeg" >
+            <div class="content">
+                <h2>Table Mountain</h2>
+                <p>Ride the cable car or hike to the top of Table Mountain for spectacular views of Cape Town and its surroundings. Explore hiking trails, marvel at unique flora and fauna, and enjoy a meal at the mountaintop café while taking in the scenery.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://cdn.projectexpedition.com/photos/3484sightattractionswimmers_at_boulders_beach_cape_town_sized.jpg" >
+            <div class="content">
+                <h2>Boulders Beach</h2>
+                <p>Visit Boulders Beach to see African penguins in their natural habitat. Walk along the boardwalks and observe these adorable birds as they swim, waddle, and bask in the sun. Enjoy a swim in the sheltered bay and relax on the sandy shores.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://live.staticflickr.com/2676/4033765213_e8f52ff1e2_b.jpg" >
+            <div class="content">
+                <h2>Kirstenbosch Botanical Gardens</h2>
+                <p>Explore Kirstenbosch Botanical Gardens, renowned for its diverse plant species and stunning landscapes. Discover indigenous flora, walk along scenic paths, and relax in beautiful garden settings with views of Table Mountain.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/3e/a8.jpg" >
+            <div class="content">
+                <h2>Robben Island</h2>
+                <p>Take a ferry to Robben Island, a UNESCO World Heritage Site with a rich history. Tour the prison where Nelson Mandela was incarcerated, learn about South Africa's struggle for freedom, and explore the island's natural and cultural landmarks.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://live.staticflickr.com/141/362004423_af47dd57bb_b.jpg" >
+            <div class="content">
+                <h2>Victoria & Alfred Waterfront</h2>
+                <p>Visit the Victoria & Alfred Waterfront, a vibrant shopping and entertainment hub in Cape Town. Explore shops, restaurants, and attractions, take a boat trip to Robben Island, or simply enjoy the lively atmosphere and beautiful harbor views.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://www.asara.co.za/wp-content/uploads/2020/08/point.jpg" >
+            <div class="content">
+                <h2>Cape Point Nature Reserve</h2>
+                <p>Explore Cape Point Nature Reserve and the Cape of Good Hope, located at the southwestern tip of the Cape Peninsula. Discover scenic viewpoints, coastal trails, and diverse wildlife in this rugged and picturesque natural reserve.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2>Adventures</h2>
+    <div class="container2">
+        <div class="section">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/2e/d7.jpg">
+            <div class="content">
+                <p>Experience the thrill of shark cage diving off the coast of Cape Town. Get up close and personal with great white sharks in their natural habitat, protected by a secure cage. Witness these magnificent creatures in action and create unforgettable memories.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://insideguide.co.za/cape-town/app/uploads/2020/11/lions-head-hike-cape-town-sm.jpg">
+            <div class="content">
+                <p>Hike up Lion's Head for panoramic views of Cape Town, Table Mountain, and the Atlantic Seaboard. Enjoy a moderately challenging hike with stunning scenery along the way. Reach the summit for breathtaking 360-degree views of the city and coastline.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/79/4b/40/caption.jpg?w=500&h=400&s=1">
+            <div class="content">
+                <p>Embark on a scenic helicopter flight over Cape Town and the Cape Peninsula. Soar above iconic landmarks like Table Mountain, Cape Point, and the Twelve Apostles, enjoying unparalleled views of the city and its breathtaking natural beauty.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                    <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

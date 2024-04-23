@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00ADB5;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 6vw;
+}
+
+#logo {
+    margin: 1vw 1.3vw;
+}
+
+#logo img {
+    height: 7vw;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    margin: 1vw;
+    padding: 0.2vw 1.5vw;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #222831;
+    background-color: #EEEEEE;
+}
+
+#btn1 {
+    display: flex;
+}
+
+.btn {
+    font-size: 1.6vw;
+    padding: 0.2vw 1.5vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+#logo img {
+    margin-top: 4.2vw;
+    height: 8vw;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10vw;
+    height: 36vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('./images/bg.jpeg') no-repeat center center/cover;
+    height: 42vw;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+#home h1 {
+    color: #222831;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 4px 4px #111;
+}
+
+.para1 {
+    color: #222831;
+    text-align: center;
+    font-size: 1.4vw;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.para {
+    color: #222831;
+    text-align: center;
+    font-size: 2.2vw;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2.5px 2.5px #111;
+}
+
+#destinations,
+#reviews {
+    margin: 3vw;
+}
+
+#destinations h1,
+#reviews h1 {
+    margin-top: 0;
+    margin-left: 5vw;
+    color: #222831;
+    margin-bottom: 2vw;
+    font-size: 2vw;
+}
+
+.container,
+.container1 {
+    display: grid;
+    grid-gap: 1vw;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container1 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.box {
+    padding: 1vw;
+    padding-bottom: 3vw;
+    border: 1px solid #EEEEEE;
+    text-align: justify;
+    border-radius: 7px;
+    background-color: aliceblue;
+    color: #222831;
+    text-decoration: none;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px #222831;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.content h2 {
+    margin-top: 1vw;
+    color: #222831;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.card-price {
+    background: #00ADB5;
+    color: #EEEEEE;
+    font-size: 1vw;
+    padding: 0.4vw 0.5vw;
+    border-radius: 6px;
+}
+
+.card-rating {
+    background: rgb(255, 196, 12);
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+    color: #EEEEEE;
+    font-size: 1vw;
+    padding: 0.4vw 0.5vw;
+    border-radius: 6px;
+}
+
+ion-icon[name="star"] {
+    font-size: 1vw;
+    display: block;
+}
+
+.destinations h1 {
+    font-size: 2vw;
+}
+
+h2 {
+    font-size: 1.5vw;
+}
+
+.content p {
+    font-size: 1vw;
+}
+
+footer {
+    background: #222831;
+    color: #EEEEEE;
+    padding: 2vw 3vw;
+    margin-top: 3vw;
+}
+
+#footer {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100%;
+    margin: 1vw;
+}
+
+.box1 ul li {
+    list-style: none;
+    margin-bottom: 0.7vw;
+}
+
+.box1 ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.1vw;
+}
+
+.box1 ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer .box2 {
+    margin: 0% 4vw;
+}
+
+u {
+    font-size: 1.4vw;
+}
+
+#para {
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1vw 0px;
+}
+
+.icons img {
+    width: 4vw;
+}
+
+.center {
+    text-align: center;
+    font-size: 1.1vw;
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <style>
+        body {
+            background-color: #CBF1F5;
+        }
+       .middle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: x-large;
+    background-image: url("./Images/northernlights");
+    background-repeat: round;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;  
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: justify;
+    border-radius: 7px;
+    background-color: white;
+    color: black; 
+    text-decoration: none; 
+    
+}
+
+.box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    background-color:#0174BE;
+    color: white;
+}
+
+.box img {
+    width: 100%;
+    height: 230px; 
+    object-fit: cover; 
+    border-radius: 7px;
+}
+
+.content {
+    padding: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00ADB5;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 6vw;
+}
+
+#logo {
+    margin: 1vw 1.3vw;
+}
+
+#logo img {
+    height: 7vw;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    margin: 1vw;
+    padding: 0.2vw 1.5vw;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #222831;
+    background-color: #EEEEEE;
+}
+
+#btn1 {
+    display: flex;
+}
+
+.btn {
+    font-size: 1.6vw;
+    padding: 0.2vw 1.5vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+#logo img {
+    margin-top: 4.2vw;
+    height: 8vw;
+}
+
+footer {
+    background: #222831;
+    color: #EEEEEE;
+    padding: 2vw 3vw;
+    margin-top: 3vw;
+}
+
+#footer {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100%;
+    margin: 1vw;
+}
+
+.box1 ul li {
+    list-style: none;
+    margin-bottom: 0.7vw;
+}
+
+.box1 ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.1vw;
+}
+
+.box1 ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer .box2 {
+    margin: 0% 4vw;
+}
+
+u {
+    font-size: 1.4vw;
+}
+
+#para {
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1vw 0px;
+}
+
+.icons img {
+    width: 4vw;
+}
+
+.center {
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="./index.html">Home</a></li>
+            <li class="item"><a href="./destination.html">Explore</a></li>
+            <li class="item"><a href="./profile.html">Trips</a></li>
+            <li class="item"><a href="./booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='./contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='./login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="middle">
+    <h1>Explore Your Dream Destinations With Ease</h1>
+    <p style="font-size:large;font-weight:400;">Discover all the essential information you need for a memorable trip</p>
+    </div>
+    <hr>
+    <div class="container">
+        <a href="havelock.html" class="box">
+            <img src="./Images/havelock.jpg" >
+            <div class="content">
+                <h2>Havelock Island</h2>
+                <p>Havelock Island, also known as Swaraj Deep of  the Andaman Islands,India, is covered with dense forests having tall, lush trees and outlined with white sandy beaches and coral reefs. It's loved for its picturesque views and its laid-back vibes.</p>
+            </div>
+        </a>
+        <a href="paris.html" class="box">
+            <img src="./Images/paris.jpg" >
+            <div class="content">
+                <h2>Paris</h2>
+                <p>Paris, the capital of France, has been designed specifically for the enjoyment of tourists. It's a city with amazing food and rich cultural heritage such as historic sites, art museums, and parks with stunning views everywhere we turn.</p>
+            </div>
+        </a>
+        <a href="queenstown.html" class="box">
+            <img src="./Images/queenstown.jpg" >
+            <div class="content">
+                <h2>Queenstown</h2>
+                <p>Queenstown, a town in New Zealand, sits on the shore of South Island's Lake Wakatipu and towering mountains. It's an adventure hub bursting with outdoor activities. There's also skiing from winter through spring, walking, and hiking trails with beautiful sightseeing places.</p>
+            </div>
+        </a>
+        <a href="rio.html" class="box">
+            <img src="./Images/rio.jpg" >
+            <div class="content">
+                <h2>Rio de Janeiro</h2>
+                <p>Rio de Janeiro is a huge seaside city in Brazil with pretty beaches dramatic mountains and abundant natural beauty. Explore its numerous museums and art galleries with impressive architecture rich in culture, football stadiums, and a buzzing food scene.</p>
+            </div>
+        </a>
+        <a href="helsinki.html" class="box">
+            <img src="./Images/helsinki.jpg" >
+            <div class="content">
+                <h2>Helsinki</h2>
+                <p>Finland's capital city, Helsinki is called the pearl of the Baltic Sea and is surrounded by one of the world's largest archipelagos. It is a cultural hotspot with unique architecture, natural reserves, wildlife parks, sauna places, swimming beaches, and live music festivals. It has some picturesque villages and towns.</p>
+            </div>
+        </a>
+        <a href="tokyo.html" class="box">
+            <img src="./Images/tokyo.jpg" >
+            <div class="content">
+                <h2>Tokyo</h2>
+                <p>Tokyo, Japan is chosen as the world's most satisfying city for travel. It has diverse offerings including spiritual sites, vintage teahouses, and peaceful gardens. It is enriched with cultural experiences, scenic beauty, an unrivaled food scene, and wild nightlife.</p>
+            </div>
+        </a>
+        <a href="newyork.html" class="box">
+            <img src="./Images/nyc.jpg" >
+            <div class="content">
+                <h2>New York</h2>
+                <p>New York City, USA also known as the Big Apple is an iconic global center that has inspired the world with brilliant architecture, movies, and art. It's a fast-paced city known for its magnificent skyscrapers, Broadway theatres, and beautiful landmarks making it a perfect destination for travellers.</p>
+            </div>
+        </a>
+        <a href="interlaken.html" class="box">
+            <img src="./Images/interlaken.jpg" >
+            <div class="content">
+                <h2>Interlaken</h2>
+                <p>Interlaken is a popular Swiss resort town in the Bernese Oberland on an alluvial plain, between Lake Thun and Lake Brienz.It has striking views of mountains, and natural and wildlife areas, and is a point for numerous adventure activities. This includes skiing, hiking trails, snowboarding, and toboggan rides.</p>
+            </div>
+        </a>
+        <a href="istanbul.html" class="box">
+            <img src="./Images/istanbul.jpg"  >
+            <div class="content">
+                <h2>Istanbul</h2>
+                <p>Istanbul, Turkey, is a spectacular city at the crossroads of two continents - Europe and Asia. This city is where the past goes hand in hand with the present with its beautiful historic landmarks, rich culture celebrating their faith, vibrant nightlife with marketplaces and shopping arcades, and delightful cuisine.</p>
+            </div>
+        </a>
+        <a href="capetown.html" class="box">
+            <img src="./Images/cape-town.jpg"  >
+            <div class="content">
+                <h2>Cape Town</h2>
+                <p>Cape Town, South Africa, is a modern cosmopolitan city surrounded by nature. From flat-topped Table Mountain down to the blue waters of Table Bay, it is a city known for scenic beaches and stunning biodiversity. Wine farms, wildlife safaris, flourishing arts, dining, and nightlife make it the perfect spot for tourists.</p>
+            </div>
+        </a>
+        <a href="doha.html" class="box">
+            <img src="./Images/doha.jpg"  >
+            <div class="content">
+                <h2>Doha</h2>
+                <p>Doha, the capital city of Qatar, is a small country located in the Middle East on the north-eastern coast of the Arabian Peninsula. It is a multicultural city known for its modern architecture, high-rise buildings, luxurious shopping malls, and dazzling views of the harbor.</p>
+            </div>
+        </a>
+        <a href="krabi.html"  class="box">
+            <img src="./Images/krabi"  >
+            <div class="content">
+                <h2>Krabi </h2>
+                <p>Krabi, Thailand is famous for its lush tropical greenery and stunning coastline with breathtaking beaches and islands. Its coral reef vistas are also one of the world’s most beautiful, which makes the City a great spot for coral diving. It is also abundant in limestone cliffs, meandering caves, hot springs, and a wildlife sanctuary.</p>
+            </div>
+        </a>
+        
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="./images/email.gif"></a>
+                    <a href="contactus.html"><img src="./images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="./images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things To Do</title>
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 10px;  
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .box {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: justify;
+        border-radius: 12px;
+        background-color: aliceblue;
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .box:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        
+    }
+    
+    .box img {
+        width: 100%;
+        height: 230px; 
+        object-fit: cover; 
+        border-radius: 7px;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .container2 {
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .container2 .section {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px; 
+        }
+        .container2 .section img {
+            width: 35%; 
+            margin: 10px; 
+            border-radius: 8px; 
+            box-shadow: 0px 2px 2px black; 
+        }
+        .container2 .section .content {
+            width: 55%; 
+            margin: 10px; 
+        }
+        .container2 .section .content p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .container2 .section .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container2 .section:nth-child(even) .content {
+            order: -1; 
+        }
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Things To Do In New York</h1>
+    <h2>Must-Visit Places</h2>
+    <div class="container">
+        <div class="box">
+            <img src="https://a.cdn-hotels.com/gdcs/production174/d785/96c72d1c-32dc-4575-9aae-3e3329db1e7d.jpg" >
+            <div class="content">
+                <h2>Statue of Liberty</h2>
+                <p>The Statue of Liberty, a symbol of freedom and democracy, is an iconic landmark in New York Harbor. Take a ferry to Liberty Island, explore the museum exhibits, and climb to the crown for panoramic views of the city skyline and harbor.</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg" >
+            <div class="content">
+                <h2>Times Square</h2>
+                <p>Times Square, also known as "The Crossroads of the World," is a vibrant entertainment hub in the heart of Manhattan. Experience the dazzling lights, towering billboards, and bustling crowds as you explore the theaters, shops, and attractions of this iconic destination.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://www.shutterstock.com/image-photo/aerial-view-central-park-new-600nw-1414639229.jpg" >
+            <div class="content">
+                <h2>Central Park</h2>
+                <p>Central Park is a sprawling urban oasis in the heart of Manhattan, offering a peaceful retreat from the city's hustle and bustle. Explore its scenic paths, picturesque bridges, and tranquil lakes, and visit iconic landmarks like Bethesda Terrace and the Central Park Zoo.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://static.toiimg.com/thumb/71579199/empire-state-building.jpg?width=1200&height=900" >
+            <div class="content">
+                <h2>Empire State Building</h2>
+                <p>The Empire State Building, an architectural marvel and symbol of New York City, offers breathtaking views from its observation decks. Ascend to the 86th and 102nd floors for panoramic vistas of the city skyline, including landmarks like the Chrysler Building and Statue of Liberty.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://www.planetware.com/photos-large/USNY/new-york-city-brooklyn-bridge.jpg" >
+            <div class="content">
+                <h2>Brooklyn Bridge</h2>
+                <p>The Brooklyn Bridge, a historic suspension bridge spanning the East River, offers stunning views of the Manhattan skyline and New York Harbor. Walk, bike, or drive across the bridge, and admire its Gothic architecture, granite towers, and intricate cable patterns.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://media.timeout.com/images/100439615/image.jpg" >
+            <div class="content">
+                <h2>Rockefeller Center</h2>
+                <p>Rockefeller Center is a historic complex of commercial buildings, entertainment venues, and public art in Midtown Manhattan. Visit the Top of the Rock observation deck for panoramic views, skate at the iconic ice rink, and attend seasonal events like the Christmas Tree Lighting Ceremony.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://images.contentstack.io/v3/assets/bltba617d00249585dc/blt819a0df082f732bd/60edf20bb86fce146acbcf38/1-reedbroadway-hero-4320x2048.jpg?auto=webp&disable=upscale&quality=70&width=1920&height=1080&fit=crop" >
+            <div class="content">
+                <h2>Broadway</h2>
+                <p>Broadway is the epicenter of live theater and musical entertainment in New York City. Catch a world-class Broadway show, ranging from classic musicals to cutting-edge dramas, at one of the iconic theaters in the Theater District.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Photos_NewYork1_032.jpg/800px-Photos_NewYork1_032.jpg" >
+            <div class="content">
+                <h2>Wall Street</h2>
+                <p>Wall Street, located in the Financial District of Lower Manhattan, is synonymous with global finance and commerce. Visit iconic landmarks like the New York Stock Exchange and Federal Hall, explore historic cobblestone streets, and learn about the history of American capitalism.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://www.metmuseum.org/-/media/images/events/ongoing-programs/metcelebrates/festivals-and-special-programs/fy22/museum-mile-2022-marquee.jpg?sc_lang=en" >
+            <div class="content">
+                <h2>Museum Mile</h2>
+                <p>Museum Mile, along Fifth Avenue on the Upper East Side, is home to some of the world's most renowned museums and cultural institutions. Explore the Metropolitan Museum of Art, the Guggenheim Museum, and the Museum of Modern Art, among others, and immerse yourself in art, history, and culture.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <h2>Adventures</h2>
+    <div class="container2">
+        <div class="section">
+            <img src="https://www.centralpark.com/downloads/8570/download/ice-skating.jpg?cb=67ec933819297dc8fbc4c8490ab68e53&w=2000">
+            <div class="content">
+                <p>Go ice skating at Wollman Rink in Central Park, a beloved winter tradition for locals and visitors alike. Glide across the ice, surrounded by the park's scenic beauty and iconic skyline views, and warm up with hot cocoa at the rinkside café.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://static01.nyt.com/images/2020/03/13/nyregion/13nyvirus-biking1/13nyvirus-biking1-superJumbo.jpg">
+            <div class="content">
+                <p>Explore New York City by bike with a Citi Bike rental, offering convenient access to bike stations throughout the city. Pedal along dedicated bike lanes, explore scenic waterfront paths, and discover hidden gems in neighborhoods like Brooklyn and Queens.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/0a/5d/f1.jpg">
+            <div class="content">
+                <p>Take a sunset cruise along the Hudson River with Circle Line Sightseeing Cruises, offering stunning views of the Manhattan skyline and iconic landmarks like the Statue of Liberty and One World Trade Center. Enjoy live narration, refreshments, and photo opportunities on this unforgettable boat tour.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                    <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

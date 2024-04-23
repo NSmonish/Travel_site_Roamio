@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants in Cape Town</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .container4 .box {
+            background-color: aliceblue; 
+            border-radius: 10px;
+            box-shadow: 0px 4px 2px black;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container4 .box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .container4 .box img {
+            max-width: 100%;
+            width: 270px;
+            height: 140px;
+            border-radius: 10px;
+            object-fit: cover; 
+        }
+        p{
+            text-align: justify;
+        }
+        .box:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            background-color:#0174BE;
+            color: white;
+        }
+        .box .stars {
+            color: orange;
+        }
+
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Restaurants in Cape Town</h1>
+    <div class="container4">
+    
+        <a href="https://cabriere.co.za/restaurant/" class="box">
+            <img src="https://visi.co.za/wp-content/uploads/2020/12/haut6.jpg" >
+            <h3>Haute Cabrière Restaurant</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(1,123)</span>
+            </div>
+            <span style="font-size: small;">French, European, Wine Bar</span>
+            <p>Haute Cabrière Restaurant offers French-inspired cuisine and an extensive selection of wines in a beautiful setting overlooking the Franschhoek Valley. Enjoy gourmet dishes paired with fine wines produced by the estate.</p>
+        </a>
+        <a href="https://www.restaurants.co.za/the-bungalow-restaurant" class="box">
+            <img src="https://storage.googleapis.com/prza/picture/image/4042/large_6b4a5136aa.jpg" >
+            <h3>The Bungalow</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(724)</span>
+            </div>
+            <span style="font-size: small;">Seafood, Contemporary, Cocktail Bar</span>
+            <p>The Bungalow offers a stylish dining experience right on the beachfront with panoramic views of the Atlantic Ocean. Enjoy fresh seafood dishes, innovative cocktails, and a vibrant atmosphere at this popular Cape Town restaurant.</p>
+        </a>
+        <a href="https://www.steenbergfarm.com/tryn-cape-town-contemporary-restaurant/" class="box">
+            <img src="https://catherines-cafe.com/wp-content/uploads/2022/04/16-51-41-CQ2A9743-SarahScott-scaled.jpg" >
+            <h3>Catharina's Restaurant</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span style="color: black;">(603)</span>
+            </div>
+            <span style="font-size: small;">European, Contemporary, Fine Dining</span>
+            <p>Catharina's Restaurant offers an elegant dining experience on the historic Steenberg Wine Estate. Indulge in European-inspired cuisine made with seasonal ingredients sourced from local suppliers, all served in a beautifully restored manor house.</p>
+        </a>
+        <a href="https://ttkfledgelings.co.za/home/" class="box">
+            <img src="https://storage.googleapis.com/prza/picture/image/3755/large_78d6fd4265.jpg" >
+            <h3>The Test Kitchen</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(1,548)</span>
+            </div>
+            <span style="font-size: small;">Fine Dining, Contemporary, African</span>
+            <p>The Test Kitchen is a renowned fine dining restaurant offering innovative and creative dishes inspired by African flavors. Located in the Old Biscuit Mill, this restaurant provides an intimate and exclusive culinary experience.</p>
+        </a>
+        <a href="https://www.kloofstreethouse.co.za/" class="box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/29/61/ff/entrance.jpg" >
+            <h3>Kloof Street House</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(1,327)</span>
+            </div>
+            <span style="font-size: small;">European, Contemporary, Bar</span>
+            <p>Kloof Street House offers a charming and eclectic dining experience in a Victorian-era house. The menu features European-inspired dishes with a contemporary twist, and the bar serves a wide selection of cocktails and wines.</p>
+        </a>
+        <a href="https://www.belthazar.co.za/" class="box">
+            <img src="https://insideguide.co.za/cape-town/app/uploads/2023/06/belthazar-restaurant-waterfront.webp" >
+            <h3>Belthazar</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span style="color: black;">(1,821)</span>
+            </div>
+            <span style="font-size: small;">Steakhouse, Seafood, Wine Bar</span>
+            <p>Belthazar is a premier steakhouse and wine bar located in the vibrant V&A Waterfront. Offering an extensive wine selection and the finest cuts of meat and fresh seafood, it's a haven for food and wine lovers.</p>
+        </a>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                    <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

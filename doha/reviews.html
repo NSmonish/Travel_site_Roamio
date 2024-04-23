@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews on Doha!</title>
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+        .container2 {
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .container2 .section {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px; 
+        }
+        .container2 .section img {
+            width: 350px;
+            height: 220px; 
+            margin: 10px; 
+            border-radius: 8px; 
+            box-shadow: 0px 4px 4px black; 
+        }
+        .container2 .section .content {
+            width: 55%; 
+            margin: 10px; 
+            display: inline;
+        }
+        .container2 .section .content p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .container2 .section .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container2 .section:nth-child(even) .content {
+            order: -1; 
+        }
+        q{
+            font-size: large;
+            font-weight:525;
+        }
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Reviews on Doha!</h1>
+    <div class="container2">
+        <div class="section">
+            <img src="https://t3.ftcdn.net/jpg/01/64/13/54/360_F_164135439_94IGqGRgJkCRRARXUcqsGWfZPXl0fcWf.jpg">
+            <div class="content">
+                <h3><q><b>Iconic Skyline!</b></q></h3>
+                <q><i>Doha's skyline is truly mesmerizing, especially during sunset. The futuristic architecture, with landmarks like the Torch Doha and the iconic Burj Qatar, creates a stunning backdrop for a memorable evening in the city.</i></q>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://mediaim.expedia.com/destination/1/1988ddf55d4c2ed37c3cbd046f176ad5.jpg">
+            <div class="content">
+                <h3><q><b>The Pearl-Qatar</b></q></h3>
+                <q><i>Visiting The Pearl-Qatar felt like stepping into a luxurious paradise. The beautiful marinas, upscale shopping, and fine dining options make it an ideal destination for a day of indulgence and relaxation.</i></q>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://cdn3.globehunters.com/3194-doha-LC-lcg.jpg">
+            <div class="content">
+                <h3><q><b>Cultural Delight!</b></q></h3>
+                <q><i>Exploring Souq Waqif was like stepping into another world. The bustling marketplace, the aroma of spices, and the vibrant atmosphere make it a must-visit in Doha. Don't miss the traditional Qatari cuisine at the restaurants here!</i></q>
+            </div>
+        </div>
+        <div class="section">
+            <img src="https://cdn.britannica.com/96/126596-050-BADCED40/Museum-of-Islamic-Art-Qatar-Doha-Pei-2008.jpg">
+            <div class="content">
+                <h3><q><b>Museum of Islamic Art</b></q></h3>
+                <q><i>The Museum of Islamic Art is a treasure trove of exquisite artifacts and artworks. The stunning architecture and the well-curated exhibits make it a must-visit for anyone interested in Islamic history and culture.</i></q>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                    <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

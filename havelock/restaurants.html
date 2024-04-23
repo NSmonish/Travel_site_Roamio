@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .container4 .box {
+            background-color:aliceblue; 
+            border-radius: 10px;
+            box-shadow: 0px 4px 2px black;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container4 .box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            
+        }
+
+        .container4 .box img {
+            max-width: 100%;
+            width: 270px;
+            height: 140px;
+            border-radius: 10px;
+            object-fit: cover; 
+           
+        }
+        p{
+            
+            text-align: justify;
+        }
+        .box:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        background-color:#0174BE;
+        color: white;
+       
+        }
+        .box .stars {
+            color: orange;
+        
+        }
+
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Restaurants in Havelock!</h1>
+    <div class="container4">
+        <a href="https://www.instagram.com/bonovacafe/" class="box">
+            <img src="./img/bonova-cafe.jpg" >
+            <h3>Bonova Cafe and Pub</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,345)</span>
+            </div>
+            <span style="font-size: small;">Seafood</span>
+            <p>Situated at Beach No. 2, at Seashell Resort, the seaside foodie paradise is only a few steps away from Havelock Island Jetty. It's been winning gourmets since 2017 when it was started.</p>
+            
+        </a>
+        <a href="https://www.instagram.com/nemocafe_beachbar/" class="box">
+            <img src="./img/nemo-cafe.jpg" >
+            <h3>Nemo Cafe</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(2,154)</span>
+            </div>
+            <span style="font-size: small;">Chinese, Indian, Cafe, Seafood, Asian, Thai, Arabic</span>
+            <p>A wonderful part of Havelock Island Beach Resort on Govind Nagar Beach, Nemo Café is known for extraordinary DJ parties and luscious seafood.</p>
+        </a>
+        <a href="https://www.facebook.com/fullmoonandaman" class="box">
+            <img src="./img/full-moon.jpg" >
+            <h3>Full Moon Cafe</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(1,672)</span>
+            </div>
+            <span style="font-size: small;">Indian, Cafe, Seafood, International, Asian</span>
+            <p>Extremely near to a scuba diving facility, the relaxed shack serves yummy breakfast, fresh juices and more. Also, they have an incredibly cheerful pet hound. It's located in Village No. 3.</p>
+            
+        </a>
+        <a href="https://www.somethingdifferenthavelock.com/" class="box">
+            <img src="./img/something-different.jpg" >
+            <h3>Something Different</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(3,578)</span>
+            </div>
+            <span style="font-size: small;">Chinese, Indian, Bar, Pizza, Cafe</span>
+            <p>The peaceful restaurant with views of the turquoise blue sea lies at Beach No: 2. They have got a little library and deliver a complimentary pick and drop service.</p>
+        </a>
+        <a href="https://www.facebook.com/people/Narrahavelock/61550809975965/" class="box">
+            <img src="./img/narra.jpg" >
+            <h3>Narra</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(1,032)</span>
+            </div>
+            <span style="font-size: small;">Indian, Asian, Pub, Fusion, Gastropub, South American</span>
+            <p>Narra,at No.5 in Vijay Nagar Beach, offers a delightful fusion of local and international flavors. With a focus on fresh seafood and organic ingredients, it's a favorite spot for travelers.</p>
+        </a>
+        <a href="https://www.facebook.com/Anjucocoresto" class="box">
+            <img src="./img/anju-coco.jpg" >
+            <h3>Anju Coco</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="color: black;">(983)</span>
+            </div>
+            <span style="font-size: small;">Indian, Seafood, Asian</span>
+            <p>Liked by foreign tourists love fresh fish, Anju Coco,found at Vijay Nagr Beach , serves a delicious fusion of local and international cuisine, highlighting fresh seafood and organic ingredients.</p>
+        </a>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                    <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

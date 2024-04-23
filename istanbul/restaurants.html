@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants in Istanbul</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .container4 .box {
+            background-color: aliceblue; 
+            border-radius: 10px;
+            box-shadow: 0px 4px 2px black;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container4 .box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .container4 .box img {
+            max-width: 100%;
+            width: 270px;
+            height: 140px;
+            border-radius: 10px;
+            object-fit: cover; 
+        }
+        p {
+            text-align: justify;
+        }
+        .box:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            background-color:#0174BE;
+            color: white;
+        }
+        .box .stars {
+            color: orange;
+        }
+
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Restaurants in Istanbul</h1>
+    <div class="container4">
+    
+        <a href="https://hamdi.com.tr/" class="box">
+            <img src="https://istanbultourstudio.s3.amazonaws.com/uploads/media_content/picture/1083/medium_Hamdi_Restaurant_Terrace.jpg" >
+            <h3>Hamdi Restaurant</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(1,924)</span>
+            </div>
+            <span style="font-size: small;">Turkish, Middle Eastern, Grill, Mediterranean</span>
+            <p>Hamdi Restaurant offers traditional Turkish cuisine with a stunning view of the Golden Horn and the historical peninsula. Famous for its kebabs and mezes, it's a must-visit for authentic flavors and a vibrant atmosphere.</p>
+        </a>
+        <a href="https://www.360istanbul.com/" class="box">
+            <img src="https://static.toiimg.com/thumb/msid-44851387,width=1200,height=900/44851387.jpg" >
+            <h3>360 Istanbul</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(1,543)</span>
+            </div>
+            <span style="font-size: small;">Turkish, Mediterranean, Bar</span>
+            <p>360 Istanbul offers panoramic views of the city and the Bosphorus Strait from its rooftop terrace. Enjoy a fusion of Turkish and Mediterranean cuisine in a stylish setting, accompanied by live music and cocktails.</p>
+        </a>
+        <a href="https://www.miklarestaurant.com/" class="box">
+            <img src="https://istanbultourstudio.s3.amazonaws.com/uploads/sight/cover_photo/32/Mikla_Istanbul_Terrace.jpg" >
+            <h3>Mikla Restaurant</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(1,212)</span>
+            </div>
+            <span style="font-size: small;">Turkish, Scandinavian, Fusion,Contemporary</span>
+            <p>Mikla Restaurant offers modern Turkish cuisine with Scandinavian influences by chef Mehmet Gürs. Located on the top floor of the Marmara Pera Hotel, it provides breathtaking views of Istanbul's skyline.</p>
+            
+        </a>
+        <a href="https://triaterracerestaurant.com/" class="box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/25/7b/38/d5/tria-terrace-restaurant.jpg" >
+            <h3>Tria Elegance Terrace Restaurant</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(987)</span>
+            </div>
+            <span style="font-size: small;">Seafood, Mediterranean, Turkish</span>
+            <p>Tria Elegance Terrace Restaurant in Galata specializes in fresh fish and seafood dishes with a Mediterranean touch. Enjoy dining with a view of the iconic Galata Tower and the Golden Horn.</p>
+        </a>
+        <a href="https://online.saraymuhallebicisi.com/" class="box">
+            <img src="https://www.dir.gen.tr/image/385028-0-saray-muhallebicisi-beyoglu.jpg" >
+            <h3>Saray Muhallebicisi</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span style="color: black;">(742)</span>
+            </div>
+            <span style="font-size: small;">Turkish, Desserts, Cafe</span>
+            <p>Saray Muhallebicisi is a popular chain of dessert cafes in Istanbul. Indulge in traditional Turkish sweets, including baklava and künefe, as well as a variety of milk-based desserts.</p>
+        </a>
+        <a href="https://www.nusr-et.com.tr/" class="box">
+            <img src="https://image-tc.galaxy.tf/wijpeg-dydne3fwuthparlz4zw5mqpsv/nusr-et-burger_standard.jpg?crop=55%2C0%2C891%2C668" >
+            <h3>Nusr-Et Steakhouse</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span style="color: black;">(685)</span>
+            </div>
+            <span style="font-size: small;">Steakhouse, Turkish, Grill</span>
+            <p>Nusr-Et Steakhouse is famous for its high-quality meats and the charismatic chef Salt Bae. Enjoy a unique dining experience with premium cuts of beef, lamb, and other grilled specialties.</p>
+        </a>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                    <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    background-color: #FDAF7B;
+}
+
+.hero {
+    margin: 0;
+    background-image: url("./Images/top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg");
+    height: 70vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-left: 2%;
+}
+
+.title h1 {
+    font-family: "Signika", sans-serif;
+    font-size: 7vw;
+    color: white;
+    text-shadow: 3px 3px 0px #111;
+    margin-top: 12%;
+    margin-bottom: 0;
+}
+
+.title p {
+    font-size: 3vw;
+}
+
+.general {
+    width: 40vw;
+    height: 12vw;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 50px;
+    box-shadow: -10px 10px #111;
+    margin-bottom: 0;
+}
+
+.general h2 {
+    font-size: 1.8vw;
+    padding: 0px 40px;
+    font-family: "Signika", sans-serif;
+}
+
+.general p {
+    margin-left: 60px;
+    font-size: 1.5vw;
+}
+
+.gc {
+    margin-left: 3vw;
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+
+.gc p{
+    margin: 0;
+}
+
+.gc img {
+    width: 3vw;
+    height: 3vw;
+}
+
+.contact h2{
+    font-family: "Signika", sans-serif;
+    margin: 0;
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    text-shadow: 3px 3px 0px #111;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.contact img {
+    border-radius: 5px;
+    width: 5vw;
+}
+
+.support1, .support2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.support1>div, .support2>div {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 17vw;
+    height: 20vw;
+    background-color: white;
+}
+
+.support1 h3, .support2 h3 {
+    font-size: 2vw;
+    margin: 5px 0px;
+}
+
+.support1 span, .support2 span {
+    font-size: 1.2vw;
+    margin: 5px 0px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.support1 p, .support2 p {
+    font-size: 1.25vw;
+}
+
+.support1 {
+    margin-bottom: 30px;
+}
+
+.support2 {
+    margin-bottom: 100px;
+}
+
+.offices h2 {
+    font-family: "Signika", sans-serif;
+    margin: 0;
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    text-shadow: 3px 3px 0px #111;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.office {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    margin: 0px 100px;
+    padding: 20px 0px;
+    border-radius: 100px;
+    margin-bottom: 100px;
+    box-shadow: -15px 15px #111;
+}
+
+.office h3{
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 2.5vw;
+    text-decoration: underline;
+}
+
+.office p{
+    margin-left: 0;
+    font-size: 1.5vw;
+}
+
+footer {
+    background: #222831;
+    color: #EEEEEE;
+    padding: 2vw 3vw;
+    margin-top: 3vw;
+}
+
+#footer {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100%;
+    margin: 1vw;
+}
+
+.box1 ul li {
+    list-style: none;
+    margin-bottom: 0.7vw;
+}
+
+.box1 ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.1vw;
+}
+
+.box1 ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer .box2 {
+    margin: 0% 4vw;
+}
+
+u {
+    font-size: 1.4vw;
+}
+
+#para {
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1vw 0px;
+}
+
+.icons img {
+    width: 4vw;
+}
+
+.center {
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00ADB5;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 6vw;
+}
+
+#logo {
+    margin: 1vw 1.3vw;
+}
+
+#logo img {
+    height: 7vw;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    margin: 1vw;
+    padding: 0.2vw 1.5vw;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #222831;
+    background-color: #EEEEEE;
+}
+
+#btn1 {
+    display: flex;
+}
+
+.btn {
+    font-size: 1.6vw;
+    padding: 0.2vw 1.5vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+#logo img {
+    margin-top: 4.2vw;
+    height: 8vw;
+}

@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    background-color: #E1F7F5;
+}
+
+.modes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    margin: 10px 0px;
+}
+
+.modes img {
+    width: 10vw;
+}
+
+.trans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #111;
+    text-decoration: none;
+}
+
+.trans:hover {
+    background-color: aliceblue;
+}
+
+.where {
+    background-image: url(./Images/flight_booking_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    padding-top: 6vw;
+    padding-left: 10vw;
+}
+
+.bookbox {
+    width: 80vw;
+    height: 35vw;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw
+}
+
+.from, .to, .fdate, .tdate, .persons {
+    display: flex;
+    flex-direction: column;
+}
+
+.from label, .to label, .fdate label, .tdate label, .persons label {
+    font-size: 3vw;
+}
+
+.from select, .to select, .fdate input, .tdate input, .persons input {
+    appearance: none;
+    border: 0;
+    outline: none;
+    font-size: 2vw;
+}
+
+.fromto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:  2px solid #111;
+    width: 70vw;
+    border-radius: 5px;
+    margin-left: 5vw;
+    gap: 25vw;
+    padding: 3vw 0;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+    border:  2px solid #111;
+    width: 70vw;
+    border-radius: 5px;
+    margin-left: 5vw;
+    padding: 3vw 0;
+}
+
+.search input {
+    width: 20vw;
+    height: 3vw;
+    border-radius: 10px;
+    border: none;
+    font-size: 2vw;
+    background-color: #111;
+    color: white;
+}
+
+.results1 img, .results2 img, .results3 img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.results1 h4, .results2 h4, .results3 h4 {
+    font-size: 1.5vw;
+}
+
+.results1 h5, .results2 h5, .results3 h5 {
+    font-size: 1.3vw;
+    color: rgb(101, 107, 107);
+}
+
+.results1 p, .results2 p, .results3 p {
+    font-size: 1.3vw;
+}
+
+.results1, .results2, .results3 {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin-left: 10vw;
+    border: 2px solid #111;
+    border-radius: 10px;
+    margin-top: 5vw;
+}
+
+.result {
+    display: none;
+}
+
+footer {
+    background: #222831;
+    color: #EEEEEE;
+    padding: 2vw 3vw;
+    margin-top: 3vw;
+}
+
+#footer {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100%;
+    margin: 1vw;
+}
+
+.box1 ul li {
+    list-style: none;
+    margin-bottom: 0.7vw;
+}
+
+.box1 ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.1vw;
+}
+
+.box1 ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer .box2 {
+    margin: 0% 4vw;
+}
+
+u {
+    font-size: 1.4vw;
+}
+
+#para {
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1vw 0px;
+}
+
+.icons img {
+    width: 4vw;
+}
+
+.center {
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00ADB5;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 6vw;
+}
+
+#logo {
+    margin: 1vw 1.3vw;
+}
+
+#logo img {
+    height: 7vw;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    margin: 1vw;
+    padding: 0.2vw 1.5vw;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #222831;
+    background-color: #EEEEEE;
+}
+
+#btn1 {
+    display: flex;
+}
+
+.btn {
+    font-size: 1.6vw;
+    padding: 0.2vw 1.5vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+#logo img {
+    margin-top: 4.2vw;
+    height: 8vw;
+}

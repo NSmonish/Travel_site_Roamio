@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .container4 .box {
+            background-color:aliceblue; 
+            border-radius: 10px;
+            box-shadow: 0px 4px 2px black;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container4 .box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .container4 .box img {
+            max-width: 100%;
+            width: 270px;
+            height: 140px;
+            border-radius: 10px;
+            object-fit: cover; 
+        }
+        p{
+            text-align: justify;
+        }
+        .box:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            background-color:#0174BE;
+            color: white;
+        }
+        .box .stars {
+            color: orange;
+        }
+
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Restaurants in Queenstown!</h1>
+    <div class="container4">
+    
+        <a href="https://ratadining.co.nz/" class="box">
+            <img src="https://www.wheretogo.co.nz/wp-content/uploads/2020/06/44165D22-30B5-43E0-923D-5A5A590B9ABE.jpeg" >
+            <h3>Rata</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span style="color: black;">(1,576)</span>
+            </div>
+            <span style="font-size: small;">New Zealand, European,Contemporary, Fusion</span>
+            <p>Rata offers a unique dining experience with its innovative cuisine. Located in the heart of Queenstown, this restaurant showcases the best of local produce and flavors, creatively prepared by renowned chef Josh Emett.</p>
+        </a>
+        <a href="https://botswanabutchery.nz/" class="box">
+            <img src="https://www.centurion-magazine.com/media/11908/botswana-butchery-restaurant-queenstown-dining-2.jpg?progressive=true&encoder=freeimage&quality=75&width=1024&height=576&mode=crop" >
+            <h3>Botswana Butchery</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(1,224)</span>
+            </div>
+            <span style="font-size: small;">Steakhouse, European, Seafood</span>
+            <p>Botswana Butchery is renowned for its premium cuts of meat and stunning waterfront location. Enjoy fine dining in a rustic yet elegant atmosphere, with dishes inspired by New Zealand's rich culinary heritage.</p>
+        </a>
+        <a href="https://queenstown.skyline.co.nz/things-to-do/market-kitchen-cafe-queenstown/" class="box">
+            <img src="https://cdn.eventfinda.co.nz/uploads/events/transformed/1707806-742442-35.jpg?v=2" >
+            <h3>Remarkables Market Kitchen</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(972)</span>
+            </div>
+            <span style="font-size: small;">Cafe,New Zealand,Contemporary</span>
+            <p>Experience casual dining with stunning mountain views at Remarkables Market Kitchen. Using locally sourced ingredients, this cafe offers a range of delicious dishes, from hearty breakfasts to gourmet burgers and salads.</p>
+            
+        </a>
+        <a href="https://www.eichardtsbar.com/" class="box">
+            <img src="https://denizennavigator.com/wp-content/uploads/2011/07/eichhardts21.jpg" >
+            <h3>Eichardt's Bar</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(857)</span>
+            </div>
+            <span style="font-size: small;">European, Bar, New Zealand</span>
+            <p>Eichardt's Bar offers a sophisticated dining experience in a historic setting. Indulge in modern cuisine, paired with fine wines and craft cocktails, while enjoying views of Lake Wakatipu and the Remarkables mountain range.</p>
+        </a>
+        <a href="https://amisfield.co.nz/" class="box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/98/93/ea/amisfield.jpg" >
+            <h3>Amisfield Bistro</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span style="color: black;">(742)</span>
+            </div>
+            <span style="font-size: small;">European, New Zealand </span>
+            <p>Located in a picturesque vineyard setting, Amisfield Bistro offers a seasonal menu featuring fresh, locally sourced ingredients. Enjoy innovative dishes paired with award-winning wines from Central Otago.</p>
+        </a>
+        <a href="https://www.eatnewzealand.nz/listing/saffron-restaurant#" class="box">
+            <img src="https://queenstownnewzealand.co.nz/wp-content/uploads/2020/04/Arrowtown-Saffron-Restaurant-exterior-Autumn.jpg" >
+            <h3>Saffron Restaurant</h3>
+            <div class="stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-full"></span>
+                <span style="color: black;">(685)</span>
+            </div>
+            <span style="font-size: small;">European, Indian,Contemporary</span>
+            <p>Saffron Restaurant offers a unique fusion of Indian and European cuisine, showcasing the best of both worlds. Located in the heart of Queenstown, it's a favorite among locals and visitors for its bold flavors and warm hospitality.</p>
+        </a>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="box1">
+                <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+                <ul>
+                    <li><a href="havelock.html">Havelock Island</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="queenstown.html">Queenstown</a></li>
+                    <li><a href="rio.html">Rio de Janeiro</a></li>
+                    <li><a href="helsinki.html">Helsinki</a></li>
+                </ul>
+            </div>
+            <div class="box2">
+                <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+                <p id="para">Looking to explore the world? Roamio
+                    can help you with
+                    'just' what
+                    you've been looking for. The
+                    largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                    who are
+                    passionate about helping you discover the world one destination at a time. Whether you're planning a
+                    weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                    wait? Start exploring with Roamio today and let the adventure begin!</p>
+            </div>
+            <div class="box3">
+                <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+                <div class="icons">
+                    <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                    <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                    <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            Copyright &copy; www.Roamio.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>

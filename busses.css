@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    background-color: #E1F7F5;
+}
+
+.modes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    margin: 10px 0px;
+}
+
+.modes img {
+    width: 10vw;
+}
+
+.trans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #111;
+    text-decoration: none;
+}
+
+.trans:hover {
+    background-color: aliceblue;
+}
+
+.where {
+    background-image: url(./Images/bus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vw;
+    padding-top: 6vw;
+    padding-left: 10vw;
+}
+
+.bookbox {
+    width: 80vw;
+    height: 55vw;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    gap: 2vw
+}
+
+.bookbox h1 {
+    font-size: 3vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    margin: 0;
+}
+
+.bookbox .dp1, .bookbox .dp2, .bookbox .dp3, .bookbox .dp4{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.bookbox .ds {
+    font-size: 2vw;
+    font-weight: 600;
+    border: 2px solid #111;
+    width: 20vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0.6vw;
+}
+
+.bookbox p {
+    background-color: white;
+    border-radius: 5px;
+    opacity: 0.9;
+    padding: 0px 1vw;
+    color: #111;
+    text-decoration: underline;
+}
+
+.d1{
+    background-image: url("./Images/havelock.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d2{
+    background-image: url("./Images/paris.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d3{
+    background-image: url("./Images/queenstown.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d4{
+    background-image: url("./Images/riodejaneiro.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d5{
+    background-image: url("./Images/helsinki.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d6{
+    background-image: url("./Images/tokyo.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d7{
+    background-image: url("./Images/newyork.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d8{
+    background-image: url("./Images/interlaken.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d9{
+    background-image: url("./Images/istanbul.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d10{
+    background-image: url("./Images/capetown.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d11{
+    background-image: url("./Images/doha.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.d12{
+    background-image: url("./Images/krabi.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background: #222831;
+    color: #EEEEEE;
+    padding: 2vw 3vw;
+    margin-top: 3vw;
+}
+
+#footer {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100%;
+    margin: 1vw;
+}
+
+.box1 ul li {
+    list-style: none;
+    margin-bottom: 0.7vw;
+}
+
+.box1 ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.1vw;
+}
+
+.box1 ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#footer .box2 {
+    margin: 0% 4vw;
+}
+
+u {
+    font-size: 1.4vw;
+}
+
+#para {
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1vw 0px;
+}
+
+.icons img {
+    width: 4vw;
+}
+
+.center {
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00ADB5;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 6vw;
+}
+
+#logo {
+    margin: 1vw 1.3vw;
+}
+
+#logo img {
+    margin-top: 4.2vw;
+    height: 8vw;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    margin: 1vw;
+    padding: 0.2vw 1.5vw;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #222831;
+    background-color: #EEEEEE;
+}
+
+#btn1 {
+    display: flex;
+}
+
+.btn {
+    font-size: 1.6vw;
+    padding: 0.2vw 1.5vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+

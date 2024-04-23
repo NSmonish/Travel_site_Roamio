@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thing To Do</title>
+    <style>
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+        }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 10px;  
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .box {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: justify;
+        border-radius: 12px;
+        background-color: aliceblue;
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .box:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        
+    }
+    
+    .box img {
+        width: 100%;
+        height: 230px; 
+        object-fit: cover; 
+        border-radius: 7px;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .container2 {
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .container2 .section {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px; 
+        }
+        .container2 .section img {
+            width: 35%; 
+            margin: 10px; 
+            border-radius: 8px; 
+            box-shadow: 0px 2px 2px black; 
+        }
+        .container2 .section .content {
+            width: 55%; 
+            margin: 10px; 
+        }
+        .container2 .section .content p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .container2 .section .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container2 .section:nth-child(even) .content {
+            order: -1; 
+        }
+        footer {
+            background: #222831;
+            color: #EEEEEE;
+            padding: 2vw 3vw;
+            margin-top: 3vw;
+        }
+        #footer {
+            display: grid;
+            grid-gap: 1vw;
+            grid-template-columns: 1fr 4fr 1fr;
+            width: 100%;
+            margin: 1vw;
+        }
+        
+        .box1 ul li {
+            list-style: none;
+            margin-bottom: 0.7vw;
+        }
+        
+        .box1 ul li a {
+            color: #EEEEEE;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.1vw;
+        }
+        
+        .box1 ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #footer .box2 {
+            margin: 0% 4vw;
+        }
+        
+        u {
+            font-size: 1.4vw;
+        }
+        
+        #para {
+            font-weight: normal;
+            font-size: 1.1vw;
+            line-height: 1.8vw;
+        }
+        
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1vw 0px;
+        }
+        
+        .icons img {
+            width: 4vw;
+        }
+        
+        .center {
+            text-align: center;
+            font-size: 1.1vw;
+        }
+        
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00ADB5;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            height: 6vw;
+        }
+        
+        #logo {
+            margin: 1vw 1.3vw;
+        }
+        
+        #logo img {
+            height: 7vw;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.6vw;
+            font-weight: 600;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            margin: 1vw;
+            padding: 0.2vw 1.5vw;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: #222831;
+            background-color: #EEEEEE;
+        }
+        
+        #btn1 {
+            display: flex;
+        }
+        
+        .btn {
+            font-size: 1.6vw;
+            padding: 0.2vw 1.5vw;
+            margin: 1vw;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .btn:hover {
+            background-color: #222831;
+            color: #EEEEEE;
+        }
+        
+        #logo img {
+            margin-top: 4.2vw;
+            height: 8vw;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/Roamio_logo.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../destination.html">Explore</a></li>
+            <li class="item"><a href="../profile.html">Trips</a></li>
+            <li class="item"><a href="../booking.html">Book Now</a></li>
+        </ul>
+
+        <div id="btn1">
+            <button class="btn" onclick="window.location.href='../contactUs.html'" target="_blank">Contact Us</button>
+            <button class="btn" onclick="window.location.href='../login.html'" target="_blank">Login/SignUp</button>
+        </div>
+    </nav>
+    <div class="navbar">
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="../stays.html">Stay</a>
+        <a href="../booking.html">Flights and Transit</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="packages.html">Packages</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <hr>
+    <h1 style="text-align: center;">Things To Do In Havelock Island</h1>
+    <h2>Most Loved Places</h2>
+    <div class="container">
+        <div class="box">
+            <img src="https://ocean.go2andaman.com/wp-content/uploads/2023/04/go2andaman_havelock_6947.jpg?compress=true&quality=90&w=900&dpr=1.5" >
+            <div class="content">
+                <h2>Elephant Beach</h2>
+                <p>Elephant Beach, located on Havelock Island in the Andaman and Nicobar Islands, is a picturesque haven renowned for its pristine sands and vibrant marine life. Perfect for snorkeling, adventure activities, and nature walks, this accessible gem promises unforgettable experiences amidst stunning natural beauty.</p>
+            </div>
+            </div>
+            <div class="box">
+                <img src="./img/cellular-jail.jpg">
+                <div class="content">
+                    <h2>Cellular Jail</h2>
+                    <p>The Cellular Jail in Port Blair, Andaman and Nicobar Islands, epitomizes India's independence struggle. Constructed by the British in the late 19th century, it housed political prisoners enduring unimaginable hardships. Now a national monument and museum, it honors the sacrifices of freedom fighters, serving as a solemn reminder of their unwavering spirit for liberty and justice.</p>
+                </div>
+        </div>
+        <div class="box">
+            <img src="https://hblimg.mmtcdn.com/content/hubble/img/havelock/mmt/activities/t_ufs/m_Mount%20Harriet%20National%20Park_2_l_360_640.jpg" >
+            <div class="content">
+                <h2>Mount Harriet National Park</h2>
+                <p>Mount Harriet National Park, located near Havelock Island in the Andaman and Nicobar Islands, India, is a paradise for nature lovers. Offering stunning vistas, diverse flora, and fauna, it's perfect for scenic treks and wildlife spotting. Visitors can enjoy picnics, nature walks, and photography amidst its serene ambiance and panoramic views, making it an unforgettable destination in the Andaman Islands.</p>
+            </div>
+    </div>
+    <div class="box">
+        <img src="./img/barren.jpg" >
+        <div class="content">
+            <h2>Barren Island</h2>
+            <p>Barren Island, located near Havelock,is home to India's only active volcano. This remote island boasts rugged terrain and volcanic activity, offering visitors a rare glimpse into the forces of geological evolution. Boat tours allow for safe observation of its otherworldly beauty, making it a must-see destination for adventurers and nature enthusiasts.</p>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./img/Radhanagar-beach.webp" >
+        <div class="content">
+            <h2>Radhanagar Beach</h2>
+            <p>Radhanagar Beach on Havelock Island, Andaman and Nicobar Islands, is hailed as one of Asia's finest. With its white sands, clear waters, and breathtaking sunsets, it's a paradise for beachgoers and photographers. Whether you're sunbathing, swimming, or strolling, Radhanagar Beach promises an unforgettable tropical retreat.</p>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./img/neil's-cove.avif" >
+        <div class="content">
+            <h2>Neil's Cove</h2>
+            <p>Neil's Cove, nestled near Havelock Island in the Andaman and Nicobar Islands, is a serene escape known for its tranquil beaches and crystal-clear waters. This hidden gem offers soft sandy shores, perfect for relaxation and rejuvenation amidst breathtaking natural beauty. With its peaceful ambiance and untouched landscapes, Neil's Cove is a must-visit destination for travelers seeking solace.</p>
+        </div>
+    </div>
+    <div class="box">
+        <img src="./img/ross-island.jpg" >
+        <div class="content">
+            <h2>Ross Island</h2>
+            <p>Ross Island, renamed Netaji Subhas Chandra Bose Island, lies near Havelock Island. Once a British administrative hub, it now stands as a captivating ruins site, blending history with natural beauty. Visitors can explore remnants of British architecture amidst lush greenery and serene beaches, making it a must-visit destination for history buffs and nature enthusiasts in the Havelock area.</p>
+        </div>
+    </div>   
+    <div class="box">
+        <img src="./img/Kala-Pathar-Beach.webp" >
+        <div class="content">
+            <h2>Kalapathar Beach</h2>
+            <p>Kalapathar Beach in Havelock Island is a serene paradise known for its stunning black rocks, soft white sands, and crystal-clear waters. Escape the crowds and unwind in this tranquil haven, where you can take leisurely walks along the shore, bask in the sun, and enjoy panoramic views of the Andaman Sea. It's the ideal spot for those seeking a peaceful retreat amidst nature's beauty.</p>
+        </div>
+    </div> 
+    <div class="box">
+        <img src="./img/vijay-nagar-beach.avif" >
+        <div class="content">
+            <h2>Vijay Nagar Beach</h2>
+            <p>Vijay Nagar Beach, also known as Beach No. 5, is a pristine stretch of coastline nestled in Havelock Island. Offering powdery white sands, turquoise waters, and lush greenery, it's a paradise for beach lovers. Relax under the shade of palm trees, swim in the calm waters, or simply soak in the breathtaking views. With its tranquil ambiance and natural beauty, Vijay Nagar Beach is the perfect spot to unwind and rejuvenate.</p>
+        </div>
+    </div>     
+</div>
+<h2>Adventures</h2>
+<div class="container2">
+    <div class="section">
+        <img src="./img/snorkelling.jpg">
+        <div class="content">
+            <p>Snorkeling in Havelock Island unveils a mesmerizing underwater world. With pristine waters and vibrant coral reefs, it's a haven for marine enthusiasts. Encounter colorful fish, graceful turtles, and stunning coral formations for an unforgettable aquatic adventure.</p>
+        </div>
+    </div>
+    <div class="section">
+        <img src="./img/kayaking.jpg">
+        <div class="content">
+            <p>Explore Havelock Island's coastal charm through kayaking. Glide along serene waters, discovering hidden coves and vibrant marine life for a memorable adventure in nature.</p>
+        </div>
+    </div>
+    <div class="section">
+        <img src="./img/banana.jpg">
+        <div class="content">
+            <p>Enjoy the adrenaline rush of banana boat rides in Havelock. Hold on tight as you bounce over the waves, creating unforgettable memories with friends and family.</p>
+        </div>
+    </div>
+    <div class="section">
+        <img src="./img/Scuba-Diving.jpg">
+        <div class="content">
+            <p>Experience the thrill of scuba diving in Havelock. Explore vibrant reefs and encounter exotic marine life for an unforgettable underwater adventure.</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer">
+        <div class="box1">
+            <p style="font-size: 1.2rem;"><u>TOP DESTINATIONS</u></p><br>
+            <ul>
+                <li><a href="havelock.html">Havelock Island</a></li>
+                <li><a href="paris.html">Paris</a></li>
+                <li><a href="queenstown.html">Queenstown</a></li>
+                <li><a href="rio.html">Rio de Janeiro</a></li>
+                <li><a href="helsinki.html">Helsinki</a></li>
+            </ul>
+        </div>
+        <div class="box2">
+            <p style="font-size: 1.2rem;"><u>ABOUT US</u></p><br>
+            <p id="para">Looking to explore the world? Roamio
+                can help you with
+                'just' what
+                you've been looking for. The
+                largest platform to book & manage all your Travels is here! We're a team of avid travelers
+                who are
+                passionate about helping you discover the world one destination at a time. Whether you're planning a
+                weekend getaway or a month-long excursion, we're here to make your travel dreams a reality. So why
+                wait? Start exploring with Roamio today and let the adventure begin!</p>
+        </div>
+        <div class="box3">
+            <p style="font-size: 1.2rem;"><u>CONNECT WITH US</u></p>
+            <div class="icons">
+                <a href="roamio.io@gmail.com"><img src="../Images/email.gif"></a>
+                <a href="contactus.html"><img src="../Images/helpdesk.gif"></a>
+                <a href="explore.html"><img src="../Images/worldwide.gif"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        Copyright &copy; www.Roamio.com. All rights reserved!
+    </div>
+</footer>
+</body>
+</html>
